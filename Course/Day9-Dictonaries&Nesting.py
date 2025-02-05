@@ -26,9 +26,9 @@
 #
 # print(travel_log["Germany"]["cities_visited"][2])
 
-from Bidding_art import logo
+from art import logo_bidding
 
-print(logo)
+print(logo_bidding)
 print("Welcome to the secret auction program.")
 bids = {}
 is_bidding_open = True
