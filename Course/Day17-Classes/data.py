@@ -20,11 +20,11 @@ question_data = [
     {"type": "boolean", "difficulty": "easy", "category": "Science: Computers",
      "question": "The Windows 7 operating system has six main editions.", "correct_answer": "True",
      "incorrect_answers": ["False"]}, {"type": "boolean", "difficulty": "easy", "category": "Science: Computers",
-                                       "question": "The programming language \" Python\" is based off a "
+                                       "question": "The programming language \"Python\" is based off a "
                                                    "modified version of \"JavaScript\".",
                                        "correct_answer": "False", "incorrect_answers": ["True"]},
     {"type": "boolean", "difficulty": "easy", "category": "Science: Computers",
-     "question": "The NVidia GTX 1080 gets its name because it can only render at a 1920x1080 screen resolution.",
+     "question": "The Nvidia GTX 1080 gets its name because it can only render at a 1920x1080 screen resolution.",
      "correct_answer": "False", "incorrect_answers": ["True"]},
     {"type": "boolean", "difficulty": "easy", "category": "Science: Computers",
      "question": "Linus Torvalds created Linux and Git.", "correct_answer": "True", "incorrect_answers": ["False"]},
