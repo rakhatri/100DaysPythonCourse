@@ -87,12 +87,14 @@ def make_coffee(type_of_coffee):
     print(f"Here is your {type_of_coffee}. Enjoy!")
 
 
-choice = ""
-while choice != 'off':
+is_on = True
+while is_on:
     choice = input("What would you like? (espresso/latte/cappuccino): ")
-    if choice == 'report':
+    if choice == 'off':
+        is_on = False
+    elif choice == 'report':
         get_report()
-    elif choice != 'off':
+    else:
         if check_ingredients(choice):
             if process_money(choice):
                 make_coffee(choice)
