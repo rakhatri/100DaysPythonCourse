@@ -11,20 +11,17 @@ screen.tracer(0)
 data = pandas.read_csv("50_states.csv")
 all_states = data.state.to_list()
 guessed_states = []
-missed_states = []
 
 while len(guessed_states) < 50:
     screen.update()
     answer_state = screen.textinput(title=f"{len(guessed_states)}/50 States Correct",
                                     prompt="What's another state's name?").title()
     if answer_state == "Exit":
-        for state in all_states:
-            if state not in guessed_states:
-                missed_states.append(state)
+        missed_states = [state for state in all_states if state not in guessed_states]
         new_data = pandas.DataFrame(missed_states)
         new_data.to_csv("states_to_learn.csv")
         break
-    if answer_state in all_states:
+    if answer_state in all_states and answer_state not in guessed_states:
         guessed_states.append(answer_state)
         state_data = data[data["state"] == answer_state]
         x_coordinate = state_data["x"].values[0]
