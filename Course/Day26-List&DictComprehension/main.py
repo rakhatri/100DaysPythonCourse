@@ -20,7 +20,8 @@ nato_phonetic_data_frame = pandas.read_csv("nato_phonetic_alphabet.csv")
 
 # Keyword Method with iterrows()
 # {new_key:new_value for (index, row) in df.iterrows()}
-
+# nato_dict = nato_phonetic_data_frame.to_dict()
+# print(nato_dict)
 nato_phonetic_dict = {row.letter: row.code for (index, row) in nato_phonetic_data_frame.iterrows()}
 print(nato_phonetic_dict)
 
