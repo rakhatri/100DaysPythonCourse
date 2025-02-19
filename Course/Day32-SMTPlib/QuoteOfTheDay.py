@@ -4,7 +4,7 @@ import random
 
 
 my_email = "rahulafterdark1@gmail.com"
-password = "hqrtyclddsvbqdlh"
+password = ""
 
 
 now = dt.datetime.now()
