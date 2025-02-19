@@ -18,7 +18,7 @@ now = dt.datetime.now()
 current_month = now.month
 current_day = now.day
 my_email = "rahulafterdark1@gmail.com"
-password = "hqrtyclddsvbqdlh"
+password = ""
 
 birthday_file = pandas.read_csv("birthdays.csv")
 birthday_dict = birthday_file.to_dict(orient="records")
